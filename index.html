@@ -8,6 +8,26 @@
     <title>My Metronome</title>
 </head>
 <body>
+    <div class="container">
+        <div class="metronome">
+            <div class="bpm-display">
+                <span class="tempo">140</span>
+                <span class="bpm">BPM</span>
+            </div>
+            <div class="tempo-text">Recommended</div>
+            <div class="tempo-settings">
+                <div class="adjust-tempo decrease-tempo">-</div>
+                <input type="range" min="20" max="280" step="1" class="slider">
+                <div class="adjust-tempo increase-tempo">+</div>
+            </div>
+            <div class="start-stop">START</div>
+            <div class="measures">
+                <div class="subtract-beats stepper">-</div>  
+                <div class="measure-count">4</div>
+                <div class="add-beats stepper">+</div> 
+            </div>
+        </div>
+    </div>
 
     <script src="./app.js"></script>
 </body>
