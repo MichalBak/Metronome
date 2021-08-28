@@ -15,7 +15,6 @@ body {
     height: 100vh;
 }
 .metronome {
-    border: 1px solid;
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -52,13 +51,109 @@ body {
 }
 .tempo-settings .adjust-tempo-btn:hover {
     background-color: #fa545c;
+    color: #fff;
 }
 .tempo-settings .decrease-tempo {
     line-height: 25px;
 }
 .tempo-settings .increase-tempo {
-    line-height: 32px;
+    line-height: 30px;
 }
+
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: transparent;
+    width: 70%;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fa545c;
+    cursor: pointer;
+    margin-top: -8px;
+}
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fa545c;
+    cursor: pointer;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+}
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+}
+
+.start-stop {
+    width: 50px;
+    height: 50px;
+    font-size: 0.7em;
+    text-align: center;
+    background-color: #fa545c;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 50px;
+    margin: 0 AUTO;
+    cursor: pointer;
+}
+
+.start-stop:hover {
+    background: #ff656c;
+}
+.measures {
+    display: flex;
+    justify-content: center;
+}
+.measures .stepper {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.measures .stepper:hover {
+    background: #ff656c;
+    color: #fff;
+}
+.measures .add-beats {
+    line-height: 21px;
+}
+.beats-per-measure-text {
+    text-align: center;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
