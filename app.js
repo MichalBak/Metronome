@@ -45,12 +45,14 @@ substractBeats.addEventListener('click', () => {
     if (beatsPerMeasure <= 2) {return};
     beatsPerMeasure--;
     measureCount.textContent = beatsPerMeasure;
+    count = 0;
 });
 
 addBeats.addEventListener('click', () => {
     if (beatsPerMeasure >= 12) {return};
     beatsPerMeasure++;
     measureCount.textContent = beatsPerMeasure;
+    count = 0;
 });
 
 startStopBtn.addEventListener('click', () => {
